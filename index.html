@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39545822-2" type="43102377b272c9e1a93b0837-text/javascript"></script>
+<script type="43102377b272c9e1a93b0837-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-39545822-2');
+    </script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta property="og:url" content="https://tpfreedom.com" />
+<meta property="og:title" content="🧻 The Coronavirus Toilet Paper Calculator - How Much Toilet Paper Do You Need?!" />
+<meta property="og:description" content="I will survive with my toilet roll in quarantine! How long will you last?" />
+<meta property="og:image" content="https://i.imgur.com/Edup57l.png" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="🧻 The Coronavirus Toilet Paper Calculator - How Much Toilet Paper Do You Need?!" />
+<meta property="twitter:description" content="I will survive with my toilet roll in quarantine! How long will you last?" />
+<meta property="twitter:image" content="https://i.imgur.com/Edup57l.png" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="43102377b272c9e1a93b0837-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js" type="43102377b272c9e1a93b0837-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" type="43102377b272c9e1a93b0837-text/javascript"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" type="43102377b272c9e1a93b0837-text/javascript"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" href="index.html" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-social.css">
+<title></title>
+<link rel="apple-touch-icon" sizes="128x128" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+
+
+<link rel="manifest" href="site.webmanifest.html">
+
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="index.html">TPFreedom</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="navbar-nav">
+ <li class="nav-item active">
+<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="newsletter.html">Newsletter</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="donate.html">Donate</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+</ul>
+</div>
+</nav> -->
+</head>
+<body>
+<script type="43102377b272c9e1a93b0837-text/javascript">
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '230618671457522',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v6.0'
+
+            });
+        };
+    </script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js" type="43102377b272c9e1a93b0837-text/javascript"></script>
+<div class="centering text-center">
+<div class="jumbotron jumbotron-fluid" id="override">
+<div class="container">
+<p class="lead" style="font-size:2.8rem">🧻</p>
+<p class="lead" style="font-size:1.8rem"><b>Скольлько тебе хватит туалетной бумаги? </b></p>
+<!-- <p class="lead">The simple calculator for how much toilet paper you need to survive the quarantine!</p> -->
+<hr>
+<h1 id="days" class="display-3 text-center mx-auto">Тебе хватит на  <b id="daysB">5</b> дней</h1>
+<p class="lead" style="font-size:1.6rem" id="qpercent"> это  <b></b>% твоего карантина </p>
+<!-- <a class="btn btn-social btn-facebook btn-sm mt-2" href="javascript: postToFeed()">
+<span class="fab fa-facebook "></span>
+Share Results to Facebook
+</a> -->
+<!-- <a class="btn btn-social btn-twitter btn-sm mt-2" href="javascript: tweetIt()">
+<span class="fab fa-twitter "></span>
+Share Results to Twitter
+</a> -->
+<br>
+<!-- <span class="badge badge-success mt-3" style="font-weight: 400;">Used by <b>1,000,000+</b> people across the globe!</span> -->
+</div>
+</div>
+</div>
+<div class="container">
+<div class="col">
+<div class="row mb-5 ">
+<label for="rollstrange" class="lead">Сколько у тебя рулонов?</label>
+<input type="range" class="custom-range" id="rollstrange" min="1" max="300" value="12">
+<div id="resultrolls">Ответ: <b></b></div>
+</div>
+<div class="row mb-5">
+<label for="toiletrange" class="lead">Сколько раз ты идёшь срать?</label>
+<input type="range" class="custom-range" id="toiletrange" min="1" max="50" value="5">
+<div id="resulttoilet">Ответ: <b></b></div>
+</div>
+<hr>
+<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseAdvanced" aria-expanded="false" aria-controls="collapseExample">
+Продвинутые настройки
+</button>
+<div class="collapse" id="collapseAdvanced">
+<div class="card card-body">
+<div class="row mb-3">
+<label for="wiperange" class="lead">Сколько Листов ты используешь за один раз?</label>
+<input type="range" class="custom-range" id="wiperange" min="1" max="30" value="15">
+<div id="wipeval">Ответ: <b></b></div>
+</div>
+<div class="row mb-3">
+<label for="sheetrange" class="lead">Длинна листа (в см)</label>
+<input type="range" class="custom-range" id="sheetrange" min="1" max="30" value="10">
+<div id="sheetsval">Ответ: <b></b></div>
+</div>
+
+<div class="row mb-3">
+<label for="rollprange" class="lead">Листов в рулоне</label>
+ <input type="range" class="custom-range" id="rollprange" min="150" max="500" value="160">
+<div id="rpval">Ответ: <b></b></div>
+</div>
+<div class="row mb-3">
+<label for="qrange" class="lead">Дней карантина</label>
+<input type="range" class="custom-range" id="qrange" min="1" max="100" value="30">
+<div id="qval">Ответ: <b></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<script type="43102377b272c9e1a93b0837-text/javascript">
+
+        function postToFeed() {
+            // calling the API ...
+            var days = document.getElementById("daysB").innerHTML
+            FB.ui({
+                method: 'share',
+                href: 'https://tpfreedom.com',
+                quote: "I will survive " + days + " days with my toilet roll in quarantine! How long will you last? Try the calculator at tpfreedom.com"
+            }, function (response) { });
+        }
+
+        function tweetIt() {
+            var days = document.getElementById("daysB").innerHTML
+            var phrase = "I will survive " + days + " days with my toilet roll in quarantine! #tpfreedom #toiletpaperpanic How long will you last? Try the calculator at"
+            var tweetUrl = 'https://twitter.com/share?text=' +
+                encodeURIComponent(phrase) +
+                '' +
+                '&url=' +
+                'https://tpfreedom.com/';
+
+            window.open(tweetUrl);
+        }
+
+
+        // function postToFeed() {
+        //     // calling the API ...
+        //     var days = $("#days b").val()
+        //     FB.ui({
+        //         method: 'share_open_graph',
+        //         action_type: 'og.likes',
+        //         action_properties: JSON.stringify({
+        //             object: {
+        //                 'og:url': 'https://tpfreedom.com',
+        //                 'og:title': 'How Much Toilet Paper?! The Coronavirus Toilet Paper Calculator',
+        //                 'og:description': 'I will survive ' + days + ' days with my toilet roll in quarantine! How long will you last?',
+        //                 'og:image': 'https://i.imgur.com/d6BxmsU.jpg',
+        //             }
+        //         })
+        //     });
+        // }
+
+        $(document).ready(function () {
+
+
+
+
+
+            // Read value on page load
+            var rolls = $("#rollstrange").val()
+            var toilet = $("#toiletrange").val()
+            var sheets = $("#sheetrange").val()
+            var wipes = $("#wiperange").val()
+            var quar = $("#qrange").val()
+            var rollp = $("#rollprange").val()
+
+
+            function calculateDays() {
+
+                var sheetsonRoll = rollp
+
+                var sheetsPerDay = sheets * wipes * toilet
+
+                var rollsPerDay = sheetsonRoll / sheetsPerDay
+
+                var totalSheets = rolls * sheetsonRoll
+
+                var days = Math.round(totalSheets / sheetsPerDay)
+
+
+                var percentQ = Math.round((days / quar) * 100)
+
+                $("#days b").html(days);
+                $("#qpercent b").html(percentQ);
+
+            }
+
+            calculateDays();
+
+            $("#resultrolls b").html($("#rollstrange").val());
+
+            // // Read value on change
+            // $("#rollstrange").change(function () {
+            //     $("#resultrolls b").html($(this).val());
+            //     rolls = $(this).val()
+            //     calculateDays()
+            // });
+
+            $(document).on('input change', '#rollstrange', function () {
+                $("#resultrolls b").html($(this).val());
+                rolls = $(this).val()
+                calculateDays()
+            });
+
+            $("#resulttoilet b").html($("#toiletrange").val());
+
+            // Read value on change
+            $(document).on('input change', '#toiletrange', function () {
+                $("#resulttoilet b").html($(this).val());
+                toilet = $(this).val()
+                calculateDays()
+            });
+
+            $("#wipeval b").html($("#wiperange").val());
+
+            // Read value on change
+            $(document).on('input change', '#wiperange', function () {
+                $("#wipeval b").html($(this).val());
+                wipes = $(this).val()
+                calculateDays()
+            });
+
+            $("#sheetsval b").html($("#sheetrange").val());
+
+            // Read value on change
+            $(document).on('input change', '#sheetrange', function () {
+                $("#sheetsval b").html($(this).val());
+                sheets = $(this).val()
+                calculateDays()
+            });
+
+
+
+            $("#qval b").html($("#qrange").val());
+
+            // Read value on change
+            $(document).on('input change', '#qrange', function () {
+                $("#qval b").html($(this).val());
+                quar = $(this).val()
+                calculateDays()
+            });
+
+            $("#rpval b").html($("#rollprange").val());
+
+            // Read value on change
+            $(document).on('input change', '#rollprange', function () {
+                $("#rpval b").html($(this).val());
+                rollp = $(this).val()
+                calculateDays()
+            });
+
+
+        });
+
+
+    </script>
+<footer>
+
+<center>   <p>Сделано Андреем Горбоконем в 2021 году.</p></center> 
+</footer>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="43102377b272c9e1a93b0837-|49" defer=""></script></body>
+</html>
